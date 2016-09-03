@@ -5,14 +5,13 @@
 
   <div class="item">
     <h2>{{topic.tarefa_nome}}</h2>
-    <p class="ion-ios-clock-outline">  <span am-time-ago="topic.tarefa_data" ></span> by {{topic.tarefa_usuario}}</p>
+    <p class="ion-ios-clock-outline">  <span am-time-ago="topic.tarefa_data" ></span> por {{topic.tarefa_usuario}}</p>
   </div>
 
   <div class="item item-body hidden">   
     <p ng-bind-html="topic.tarefa_descricao"></p>
     <p>
-      <a href="#" class="subdued">1 Like</a>
-      <a href="#" class="subdued">5 Comments</a>
+      <a href="#" class="subdued">{{list_interacoes.length}} interações</a>
     </p>
   </div>
 
@@ -27,11 +26,10 @@
         <li ng-repeat="interacao in list_interacoes">
         
             <div class="date_interacao">
-                <span am-time-ago="interacao.data_time" ></span> by {{interacao.usuario}}</p>
-                <span am-time-ago="interacao.data_time" ></span>
+                <span am-time-ago="interacao.data_time" ></span>{{interacao.usuario}}
             </div>
-            <div class="conteudo_interacao" ng-bind-html="interacao.descricao">
-            </div>
+            <p class="item item-body conteudo_interacao" ng-bind-html="interacao.descricao">
+            </p>
         </li>
       </ul>
   </div>

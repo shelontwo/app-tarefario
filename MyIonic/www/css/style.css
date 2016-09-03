@@ -16,3 +16,14 @@ h2.topic-title{
 .popup-head {
   /*background-color : #cccccc;*/
 }
+
+
+.date_interacao{
+    color:#7e7e7e;
+    margin:10px;
+}
+
+.conteudo_interacao{
+    color: #7e7e7e;
+    font-size: 12px;
+}

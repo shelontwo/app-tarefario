@@ -17,13 +17,11 @@
 
 	<div class="list">
 
-	    <a class="item item-thumbnail-left item-icon-right" ng-repeat="topic in topics track by topic.tarefa_track" 
+	    <a class="item item-icon-right" ng-repeat="topic in topics track by topic.tarefa_track" 
 	    	href="#/tab/detail/{{topic.tarefa_track}}">
-	     <!-- <img src="img/no-photo.jpg" ng-if="!topic.picture">
-	      <img src="http://smilefriday.com/ionic/upload/{{topic.picture}}" ng-if="topic.picture"> -->
 
 	      <h2 class="topic-title">{{topic.tarefa_nome}}</h2>
-	      <p class="ion-ios-clock-outline">  <span am-time-ago="topic.tarefa_data" ></span> by {{topic.tarefa_usuario}}</p>
+	      <p class="ion-ios-clock-outline">  <span am-time-ago="topic.tarefa_data" ></span> por {{topic.tarefa_usuario}}</p>
           <i class="icon ion-chevron-right icon-accessory"></i>
 	    </a>
 
