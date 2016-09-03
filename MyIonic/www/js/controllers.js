@@ -20,7 +20,7 @@ angular.module('MyIonic.controllers', [])
       if($scope.topics.length > 0){ 
         params['before'] = $scope.topics[$scope.topics.length - 1].tarefa_track;
         console.log(params);
-      }
+      } 
       loadTopics(params, function(olderTopics){
           $scope.topics = $scope.topics.concat(olderTopics);
           $scope.$broadcast('scroll.infiniteScrollComplete');
@@ -44,7 +44,6 @@ angular.module('MyIonic.controllers', [])
 
      $scope.loadInteracoes = function(topic)
     {
-      console.log('load');
       $http.post(SERVER.url+'/loadInteracoes', {params: $stateParams.id})
       .success(function(response){
         console.log(response);
