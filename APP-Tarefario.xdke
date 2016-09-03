@@ -8,5 +8,8 @@
   },
   "editorTab": {
     "currentEditorMode": 0
+  },
+  "build-tab": {
+    "selectedTargets": []
   }
 }

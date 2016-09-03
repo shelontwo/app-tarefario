@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "",
       "projectGuid": "750d8c31-bd93-4e58-88a0-29c0ca6ef028",
-      "lastModifiedDate": 1472923093087,
+      "lastModifiedDate": 1472929251010,
       "creationDate": 1472922480974
     },
     "sourceDirectory": "MyIonic/www",
@@ -63,7 +63,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "certificateId_": "",
+        "certificateId_": "ClqToEs7UU2zOwh8nYewHw2",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
         "crosswalkVersion_": "19",
