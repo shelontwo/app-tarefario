@@ -27,7 +27,8 @@
         <li ng-repeat="interacao in list_interacoes">
         
             <div class="date_interacao">
-                 {{interacao.data_time}} por <b>{{interacao.id_user}}</b>
+                <span am-time-ago="interacao.data_time" ></span> by {{interacao.usuario}}</p>
+                <span am-time-ago="interacao.data_time" ></span>
             </div>
             <div class="conteudo_interacao" ng-bind-html="interacao.descricao">
             </div>
